@@ -140,7 +140,7 @@ img {
   left: 0;
   bottom: -1px;
 
-  height: 2px;
+  height: 4px;
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -389,14 +389,15 @@ img {
   margin-right: 30px;
 }
 .client-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
 
   color: #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -508,10 +509,7 @@ img {
   width: 100%;
   height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px;
+  padding: 63px 24px;
 
   background: rgba(33, 150, 243, 0.9);
 
@@ -571,16 +569,18 @@ img {
 
 .modal .modal-close-button {
   position: absolute;
-  right: 0;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
+  padding: 0;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   background-color: #ffffff;
-  margin: 8px;
+
   border-radius: 50%;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
